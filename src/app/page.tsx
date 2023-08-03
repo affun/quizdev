@@ -1,14 +1,23 @@
-import { useRouter } from "next/router";
+"use client";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <main>
       <a
         onClick={() => {
-          useRouter().push("/login");
+          router.push("/login");
         }}
       >
-        home
+        login
+      </a>
+      <a
+        onClick={() => {
+          router.push("/register");
+        }}
+      >
+        register
       </a>
     </main>
   );
