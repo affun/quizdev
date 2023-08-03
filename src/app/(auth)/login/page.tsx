@@ -48,6 +48,13 @@ const page = () => {
         <br />
         <button type="submit">Login</button>
       </form>
+      <a
+        onClick={() => {
+          router.push("/register");
+        }}
+      >
+        register
+      </a>
     </div>
   );
 };

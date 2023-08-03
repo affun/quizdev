@@ -36,6 +36,13 @@ const page = () => {
         <input type="text" value={password} onChange={(e)=>{setPassword(e.target.value)}} /> <br />
         <button type="submit">register</button>
       </form>
+      <a
+        onClick={() => {
+          router.push("/login");
+        }}
+      >
+        login
+      </a>
     </div>
   );
 };
